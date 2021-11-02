@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid red;
+            width: 1000px;
+            padding: 50px;
+            margin: auto;
+            color: rgb(5, 155, 72);
+            font-weight: bolder;
+            background-color: tomato;
+
+        }
+
+        .form {
+            border: 3px solid black;
+            padding: 20px;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Ubuntu', sans-serif;
+            background-color: rgb(253, 251, 143);
+        }
+
+        h2 {
+            text-align: center;
+            color: royalblue;
+            font-family: 'Playfair Display', serif;
+        }
+
+        #button {
+            text-align: center;
+        }
+        .btn{
+            background-color: yellowgreen;
+        }
+        .emergency{
+            float: left;
+            clear:both;
+        }
+        #text{
+            width: 150px;
+        }
+        .input{
+            background-color: rgb(252, 213, 252);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Student Information</h2>
+        <form action="" class="form">
+            <p>Name: <input type="text" class="input">Date of Birth:<input type="date" class="input">Age:<input type="number" class="input"></p>
+
+            <p>Address:<input type="text" class="input">Phone:<input type="text" class="input"></p>
+
+            <p>Parrent Addres:<input type="text" class="input">contact:<input type="text" class="input"></p>
+
+            <p>Email:<input type="email" class="input"> Can I text you? Yes<input type="checkbox" class="input"> No<input type="checkbox" class="input"></p>
+
+            <p>Parent Name<input type="text" class="input"> Contact<input type="text" class="input"></p>
+
+            <p>Sibling(name and age)<input type="text" class="input"></p>
+
+            <p>Can Your child have his/her picture taken and displayed? <input type="checkbox" class="input">Yes <input
+                    type="checkbox" class="input">No</p>
+
+            <p>What Would you like me to know about Your child?<br><textarea name="deatails" rows="8"
+                    cols="50" class="input"></textarea></p>
+
+            <p>What is the primary way your child will go home Each day? Please Let me Know.<br><textarea
+                    name="write Here" rows="5" cols="50" class="input"></textarea></p>
+
+            <h2>Emergency Contact Information</h2>
+
+            <p class="emergency">Name:<input type="text" class="input"> Contact:<input type="text" class="input"> Related to child:<input type="text" id="text" class="input"></p>
+
+            <p id="button"><input class="btn" type="submit" value="Submit Form">&nbsp;<input class="btn" type="reset" value="Reset Form"></p>
+
+        </form>
+    </div>
+</body>
+
+</html>
